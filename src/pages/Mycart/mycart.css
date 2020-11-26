@@ -9,6 +9,48 @@
     /* min-width: 30%; */
     /* min-height: 100% */
 }
+.pageHeading{
+    /* padding-top: 20px; */
+   
+}
+.footer{
+    background-color: #B76724 ;
+    padding: 20px 0;
+    position: sticky;
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+.placeOrder{
+    width: 150px;
+    margin: 0;
+    color: black;
+    --ion-color-primary: white;
+    /* color:white */
+    /* background-color: white; */
+}
+.rightside{
+    align-self: center;
+}
+.Total{
+    
+    font-size: larger;
+    align-self: center;
+}
+.tPrice{
+    font-size: xx-large;
+    font-weight: bolder;
+    align-self: center;
+}
+.pageHeader{
+     padding:20px;
+     position: sticky;
+     top: 0px;
+     z-index: 9999999;
+     background-color: white;
+    /*position: fixed; */
+}
 .quantity{
     /* width: 10px; */
     /* position: absolute;
@@ -20,11 +62,20 @@
     display: inline-grid;
     text-align: center;
     background-color: #B76724;
+    right: 30px;
+    height: 50%;
+    top: 30px;
+}
+.upper{
+    display: flex;
+    padding-left:30px;
 }
 .proCard{
-    margin: 15px 60px 30px 30px;
+    box-shadow: unset;
+    /* margin: 15px 60px 30px 30px; */
     display: flex;
     border-radius: 20px;
+    width: -webkit-fill-available;
     /* height: 120px; */
     /* margin-bottom: 30px; */
     align-self: center;

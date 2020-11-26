@@ -20,6 +20,7 @@ import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
 import Login from './pages/Login/login';
 import SignUp from './pages/Signup/signup';
+import Payment from './pages/Payment/payment';
 import Forget from './pages/Forget/forget';
 import Mycart from './pages/Mycart/mycart';
 import AllRestaurant from './pages/AllRestaurant/allrestaurant';
@@ -59,6 +60,7 @@ const App: React.FC = () => (
           <Route path="/signup" component={SignUp} exact={true}/>
           <Route path="/forget" component={Forget} exact={true}/>
           <Route path="/mycart" component={Mycart} exact={true}/>
+          <Route path="/payment" component={Payment} exact={true}/>
           <Route path="/allrestaurant" component={AllRestaurant} exact={true}/>
           <Route path="/home" component={Home} exact={true}/>
           <Route path="/walkthough" component={Walkthough} exact={true}/>
