@@ -1,0 +1,35 @@
+.slide1{
+    background-color: #57300C;
+    color:#fff;
+}
+.slide2{
+    background-color: #DE7B2E;
+    color:#fff;
+}
+.slide3{
+    background-color: #B76724;
+    color:#fff;
+}
+.walkthough{
+    
+    height: 100%;
+}
+.heading{
+    width: 100%;
+    padding-top: 5%;
+}
+.text{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.button1{
+    width: 120px;
+    --border-radius: 100px;
+    --ion-color-primary: white;
+    margin-bottom: 20px;
+    color:black;
+}
+.buttonB{
+    padding-top: 10%;
+    text-align: center !important;
+}

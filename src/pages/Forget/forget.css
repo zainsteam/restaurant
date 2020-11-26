@@ -1,0 +1,71 @@
+
+.topHeading2{
+    font-size: 36px;
+}
+.paddingV2{
+    padding: 10% 0 25% 4%;
+}
+.bodyC2{
+    margin-top: -20%;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    width: 100%;
+}
+.pageHeading{
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger !important;
+}
+.headingM2{
+    font-size: 26px;
+    font-weight: bolder;
+    padding:15% 0 0% 2% ;
+}
+.inputF4{
+    --ion-background-color:#f0f0f0;
+    border-radius: 30px;
+    /* --ion-color-primary:"gray"; */
+    margin: 5% 5% 0% 5% ;
+    /* background-color: lightgray !important; */
+}
+.forgetP2{
+    flex: auto;
+    width: 100%;
+    margin: 0% 0% 0% 0% ;
+    max-width: 100% !important;
+}
+.label{
+    margin: 20px 0px 0 30px;
+    font-weight: bolder;
+}
+.button{
+    height: 44px;
+    width: 90%;
+    --border-radius: 100px;
+    --ion-color-primary: #57300C;
+    /* margin-bottom: 20px; */
+}
+.buttonC2{
+    margin-top:20px;
+    --ion-color-primary: #57300C;
+    padding: 0% 0;
+    text-align: center !important;
+}
+.iconC2{
+    text-align: center !important;
+}
+.listP2{
+    width: 100%;
+}
+.facebook2{
+    color: rgb(56, 88, 230);
+}
+.google2{
+    color: rgb(221, 83, 83);
+}
+.twitter2{
+    color: rgb(44, 174, 218);
+}
+.icon2{
+    margin:0% 0% 0 3%;
+}

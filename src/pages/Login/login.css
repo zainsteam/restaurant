@@ -1,0 +1,52 @@
+.topHeading{
+    font-size: 36px;
+}
+.paddingV{
+    padding: 10% 0 25% 4%;
+}
+.bodyC{
+    margin-top: -20%;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    width: 100%;
+}
+.headingM{
+    font-size: 26px;
+    font-weight: bolder;
+    padding:15% 0 0% 2% ;
+}
+.inputF{
+    margin: 5% 5% 0% 5% ;
+}
+.forgetP{
+    margin: 5% 5% 0% 5% ;
+}
+.button{
+    width: 120px;
+    --border-radius: 100px;
+    --ion-color-primary: #57300C;
+    margin-bottom: 20px;
+}
+.buttonC{
+    padding: 20% 0;
+    text-align: center !important;
+}
+.iconC{
+    font-size: xx-large;
+    text-align: center !important;
+}
+.listP{
+    width: 100%;
+}
+.facebook{
+    color: rgb(56, 88, 230);
+}
+.google{
+    color: rgb(221, 83, 83);
+}
+.twitter{
+    color: rgb(44, 174, 218);
+}
+.icon{
+    margin:0% 0% 0 3%;
+}
