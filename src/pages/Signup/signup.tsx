@@ -49,7 +49,10 @@ const SignUp: React.FC = () => {
             </IonItem>
             {/* <IonLabel className="forgetP">Forget Password</IonLabel> */}
             <div className="buttonC2" >
-              <IonButton className="button" size="default">Sign Up</IonButton>
+              <IonButton className="button" size="default" onClick={e => {
+              e.preventDefault();
+              history.push('/login');
+            }}>Sign Up</IonButton>
               {/* <IonLabel>or <b>Sign up</b> </IonLabel> */}
             </div>
             {/* <div className="iconC">

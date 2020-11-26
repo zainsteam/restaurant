@@ -3,6 +3,7 @@ import {IonButtons, IonMenuButton, IonCardContent, IonCardHeader, IonCardSubtitl
 import './home.css';
 import {star, eye, search, menu, bagHandleOutline, locationOutline, logoFacebook, logoGoogle, logoTwitter, chevronBack } from 'ionicons/icons';
 import { Redirect, Route, useHistory } from 'react-router-dom';
+import Tabs from '../Tabs/tabs';
 
 const slideOpts = {
   initialSlide: 0,
@@ -156,6 +157,7 @@ const Home: React.FC = () => {
             </IonCard>
           </IonSlide>
           </IonSlides>
+          {/* <Tabs/> */}
       </IonContent>
     </IonPage>
   );

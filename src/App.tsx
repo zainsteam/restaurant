@@ -18,6 +18,7 @@ import { ellipse, square, triangle, bagHandleOutline, homeOutline, qrCodeSharp, 
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
+import Tabs from './pages/Tabs/tabs';
 import Login from './pages/Login/login';
 import SignUp from './pages/Signup/signup';
 import Payment from './pages/Payment/payment';
@@ -53,20 +54,19 @@ const App: React.FC = () => (
         <IonSplitPane contentId="main">
           <Menu />
           <IonRouterOutlet id="main">
-          <Route path="/tab1" component={Tab1} exact={true} />
-          <Route path="/tab2" component={Tab2} exact={true} />
-          <Route path="/tab3" component={Tab3} />
+          
+          <Route path="/tabs" component={Tabs} />
           <Route path="/login" component={Login} exact={true}/>
           <Route path="/signup" component={SignUp} exact={true}/>
           <Route path="/forget" component={Forget} exact={true}/>
           <Route path="/mycart" component={Mycart} exact={true}/>
           <Route path="/payment" component={Payment} exact={true}/>
           <Route path="/allrestaurant" component={AllRestaurant} exact={true}/>
-          <Route path="/home" component={Home} exact={true}/>
+          {/* <Route path="/home" component={Home} exact={true}/> */}
           <Route path="/walkthough" component={Walkthough} exact={true}/>
-          <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
+          {/* <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} /> */}
             {/* <Route path="/login" component={Login} exact /> */}
-            <Redirect from="/" to="/login" exact />
+            <Redirect from="/" to="/walkthough" exact />
           </IonRouterOutlet>
         </IonSplitPane>
       </IonReactRouter>

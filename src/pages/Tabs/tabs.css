@@ -1,0 +1,40 @@
+.toolBar{
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* margin-top: 20px; */
+    /* height: 100px; */
+    /* color: black; */
+    /* background-color: transparent; */
+}
+.barcodeB{
+    /* text-align: center; */
+    background-color: #57300C;
+    border-radius: 35px;
+    /* margin-top: -40px; */
+    z-index: 9999 !important;
+    bottom: 4%;
+    left: 41%;
+    position: absolute;
+    text-align: center;
+    padding-top:19px;
+    padding-bottom:10px;
+    padding-right: 19px;
+    padding-left: 19px;
+    align-self: center;
+    font-size: 32px;
+}
+.tabItem{
+    margin-right: 15%;
+}
+.tabItem2{
+    margin-left: 15%;
+}
+
+.bar{
+    --ion-tabbar-color:black;
+    /* background-color: transparent; */
+}
+
+/* ion-tabs{ --ion-tabbar-background-color:blue; --ion-tabs-background-color:var(--ion-tabbar-background-color, #ffffff); } */

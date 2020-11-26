@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {useRef} from 'react';
 import { IonText, IonSlides, IonSlide, IonGrid, IonRow, IonCol, IonIcon, IonCheckbox, IonButton, IonItem, IonList, IonInput, IonContent, IonHeader, IonLabel, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './walkthough.css';
 import { eye, search, menu, bagHandleOutline, locationOutline, logoFacebook, logoGoogle, logoTwitter, chevronBack } from 'ionicons/icons';
+import { Redirect, Route, useHistory } from 'react-router-dom';
 
 const slideOpts = {
   initialSlide: 0,
@@ -9,6 +11,14 @@ const slideOpts = {
 };
 
 const Walkthough: React.FC = () => {
+  let history = useHistory();
+  let mySlides = useRef<HTMLIonSlidesElement>(null);
+  
+  const swiper2 = () => mySlides.current?.slideNext();
+  // const [disablePrevBtn, setDisablePrevBtn] = useState(true);
+  // const [disableNextBtn, setDisableNextBtn] = useState(false);
+
+ 
   return (
     <IonPage>
 
@@ -19,7 +29,8 @@ const Walkthough: React.FC = () => {
           </IonToolbar>
         </IonHeader>
 
-        <IonSlides className="walkthough" pager={true} options={slideOpts}>
+        <IonSlides ref={mySlides}
+        className="walkthough" pager={true} options={slideOpts}>
           <IonSlide className="slide1">
             <IonGrid>
             <img className="" src="./assets/img/wt1.png" />                
@@ -36,7 +47,7 @@ const Walkthough: React.FC = () => {
               <IonRow className="text">
                 <IonCol>
                 <div className="buttonB" >
-              <IonButton className="button1" size="default">Next</IonButton>
+              <IonButton className="button1" size="default" onClick={swiper2}>Next</IonButton>
               {/* <IonLabel>or <b>Sign up</b> </IonLabel> */}
             </div>
                 </IonCol>
@@ -59,7 +70,7 @@ const Walkthough: React.FC = () => {
               <IonRow className="text">
                 <IonCol>
                 <div className="buttonB" >
-              <IonButton className="button1" size="default">Next</IonButton>
+              <IonButton className="button1" size="default"  onClick={swiper2}>Next</IonButton>
               {/* <IonLabel>or <b>Sign up</b> </IonLabel> */}
             </div>
                 </IonCol>
@@ -82,7 +93,10 @@ const Walkthough: React.FC = () => {
               <IonRow className="text">
                 <IonCol>
                 <div className="buttonB" >
-              <IonButton className="button1" size="default">Next</IonButton>
+              <IonButton className="button1" size="default" onClick={e => {
+              e.preventDefault();
+              history.push('/login');
+            }}>Next</IonButton>
               {/* <IonLabel>or <b>Sign up</b> </IonLabel> */}
             </div>
                 </IonCol>

@@ -2,9 +2,12 @@ import React from 'react';
 import { IonIcon, IonCheckbox, IonButton, IonItem, IonList, IonInput, IonContent, IonHeader, IonLabel, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './forget.css';
 import {eye, arrowBack, logoFacebook, logoGoogle, logoTwitter, chevronBack} from 'ionicons/icons';
+import { Redirect, Route, useHistory } from 'react-router-dom';
 
 
 const Forget: React.FC = () => {
+  let history = useHistory();
+
   return (
     <IonPage>
       <IonContent fullscreen>
@@ -14,7 +17,10 @@ const Forget: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <IonItem lines="none" className="" style={{marginTop:20}}  >
-            <IonIcon color="dark" icon={arrowBack} />
+            <IonIcon color="dark" icon={arrowBack} onClick={e => {
+            e.preventDefault();
+            history.goBack();
+          }}  />
           <IonLabel  className="pageHeading">
             Edit Password
             </IonLabel>
@@ -38,7 +44,10 @@ const Forget: React.FC = () => {
             </IonItem>
             {/* <IonLabel className="forgetP">Forget Password</IonLabel> */}
             <div className="buttonC2" >
-              <IonButton className="button" size="default">Sign Up</IonButton>
+              <IonButton className="button" size="default" onClick={e => {
+              e.preventDefault();
+              history.push('/login');
+            }}>Confirm Password</IonButton>
               {/* <IonLabel>or <b>Sign up</b> </IonLabel> */}
             </div>
             {/* <div className="iconC">

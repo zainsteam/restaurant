@@ -1,5 +1,5 @@
-import React from 'react';
-import { IonIcon, IonFabButton, IonFab, IonChip, IonCardContent, IonCard, IonCheckbox, IonButton, IonItem, IonList, IonInput, IonContent, IonHeader, IonLabel, IonPage, IonTitle, IonToolbar, IonText } from '@ionic/react';
+import React, {useState} from 'react';
+import { IonIcon, IonToggle, IonFabButton, IonFab, IonChip, IonCardContent, IonCard, IonCheckbox, IonButton, IonItem, IonList, IonInput, IonContent, IonHeader, IonLabel, IonPage, IonTitle, IonToolbar, IonText } from '@ionic/react';
 import './mycart.css';
 import { eye, star, arrowBack, logoFacebook, add, remove, bagOutline, cardOutline, timeOutline, bicycle, logoGoogle, logoTwitter, chevronBack } from 'ionicons/icons';
 import { Redirect, Route, useHistory } from 'react-router-dom';
@@ -7,7 +7,7 @@ import { Redirect, Route, useHistory } from 'react-router-dom';
 
 const Mycart: React.FC = () => {
   let history = useHistory();
-
+  const [checked, setChecked] = useState(false);
   return (
     <IonPage>
       <IonContent fullscreen>
@@ -27,6 +27,15 @@ const Mycart: React.FC = () => {
         </IonItem>
 
         <IonItem lines="none">
+        <IonToggle mode="ios" checked={checked} onIonChange={e => setChecked(e.detail.checked)} 
+         onClick={e => {
+          console.log(checked)
+        }} 
+        />
+        {checked == false &&
+        <IonText className="drive" >Drive In</IonText>}
+         {checked == true &&
+        <IonText className="take" >Take Away</IonText>}
           <IonLabel slot="end" style={{textAlign:"right"}}>Split Price</IonLabel>
         </IonItem>
         <div className="upper">

@@ -31,11 +31,14 @@ const Login: React.FC = () => {
             <IonItem className="inputF">
               <IonInput placeholder="Password"> </IonInput>
             </IonItem>
-            <IonLabel className="forgetP">Forget Password</IonLabel>
+            <IonLabel style={{ maxWidth: "100%" }} className="forgetP" onClick={e => {
+              e.preventDefault();
+              history.push('/forget');
+            }}>Forget Password</IonLabel>
             <div className="buttonC" style={{ textAlign: "center" }} >
               <IonButton className="button" size="default" onClick={e => {
               e.preventDefault();
-              history.push('/home');
+              history.push('/tabs');
             }}>Login</IonButton>
               <IonLabel style={{ maxWidth: "100%" }}  onClick={e => {
               e.preventDefault();
