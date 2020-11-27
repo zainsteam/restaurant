@@ -41,7 +41,7 @@ const Home: React.FC = () => {
               <IonCol size="2" >
                 {/* <IonItem color="primary" className="topHeading2"  > */}
                 <IonLabel color="light" className="paddingV3" onClick={e => {
-              e.preventDefault();
+              // e.preventDefault();
               history.push('/mycart');
             }}><IonIcon color="light" icon={bagHandleOutline} /></IonLabel>
                 {/* </IonItem> */}

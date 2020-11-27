@@ -88,7 +88,7 @@ const Payment: React.FC = () => {
         
         <IonGrid className="footer2">
           <IonRow>
-        <IonCol className="splitNow">
+        <IonCol className="splitNow" >
               <IonText >Split Bill</IonText>
             </IonCol>
             <IonCol className="payNow">

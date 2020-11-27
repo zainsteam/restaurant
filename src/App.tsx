@@ -54,19 +54,18 @@ const App: React.FC = () => (
         <IonSplitPane contentId="main">
           <Menu />
           <IonRouterOutlet id="main">
-          
           <Route path="/tabs" component={Tabs} />
           <Route path="/login" component={Login} exact={true}/>
           <Route path="/signup" component={SignUp} exact={true}/>
           <Route path="/forget" component={Forget} exact={true}/>
           <Route path="/mycart" component={Mycart} exact={true}/>
           <Route path="/payment" component={Payment} exact={true}/>
-          <Route path="/allrestaurant" component={AllRestaurant} exact={true}/>
-          {/* <Route path="/home" component={Home} exact={true}/> */}
+          {/* <Route path="/allrestaurant" component={AllRestaurant} exact={true}/> */}
+          <Route path="/home" component={Home} exact={true}/>
           <Route path="/walkthough" component={Walkthough} exact={true}/>
-          {/* <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} /> */}
+          <Route path="/" render={() => <Redirect to="/tabs" />} exact={true} />
             {/* <Route path="/login" component={Login} exact /> */}
-            <Redirect from="/" to="/walkthough" exact />
+            {/* <Redirect from="/" to="/walkthough" exact /> */}
           </IonRouterOutlet>
         </IonSplitPane>
       </IonReactRouter>

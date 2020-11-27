@@ -17,47 +17,45 @@ import './Menu.css';
 
 interface AppPage {
   url: string;
-  iosIcon: string;
-  mdIcon: string;
+
   title: string;
 }
 
 const appPages: AppPage[] = [
   {
-    title: 'Inbox',
-    url: '/page/Inbox',
-    iosIcon: mailOutline,
-    mdIcon: mailSharp
+    title: 'Setting',
+    url: '/login'
+
   },
   {
-    title: 'Outbox',
-    url: '/page/Outbox',
-    iosIcon: paperPlaneOutline,
-    mdIcon: paperPlaneSharp
+    title: 'Notification',
+    url: '/signup'
+
   },
   {
-    title: 'Favorites',
-    url: '/page/Favorites',
-    iosIcon: heartOutline,
-    mdIcon: heartSharp
+    title: 'Profile',
+    url: '/forget'
+ 
   },
   {
-    title: 'Archived',
-    url: '/page/Archived',
-    iosIcon: archiveOutline,
-    mdIcon: archiveSharp
+    title: 'Cart',
+    url: '/payment'
+  
   },
   {
-    title: 'Trash',
-    url: '/page/Trash',
-    iosIcon: trashOutline,
-    mdIcon: trashSharp
+    title: 'About Us',
+    url: '/walkthough'
+
   },
   {
-    title: 'Spam',
-    url: '/page/Spam',
-    iosIcon: warningOutline,
-    mdIcon: warningSharp
+    title: 'Contact Us',
+    url: '/page/Spam'
+  }
+  ,
+  {
+    title: 'Logout',
+    url: '/page/Spam'
+
   }
 ];
 
@@ -76,7 +74,7 @@ const Menu: React.FC = () => {
             return (
               <IonMenuToggle key={index} autoHide={false}>
                 <IonItem className={location.pathname === appPage.url ? 'selected' : ''} routerLink={appPage.url} routerDirection="none" lines="none" detail={false}>
-                  <IonIcon slot="start" ios={appPage.iosIcon} md={appPage.mdIcon} />
+                  
                   <IonLabel>{appPage.title}</IonLabel>
                 </IonItem>
               </IonMenuToggle>
@@ -84,7 +82,7 @@ const Menu: React.FC = () => {
           })}
         </IonList>
 
-        <IonList id="labels-list">
+        {/* <IonList id="labels-list">
           <IonListHeader>Labels</IonListHeader>
           {labels.map((label, index) => (
             <IonItem lines="none" key={index}>
@@ -92,7 +90,7 @@ const Menu: React.FC = () => {
               <IonLabel>{label}</IonLabel>
             </IonItem>
           ))}
-        </IonList>
+        </IonList> */}
       </IonContent>
     </IonMenu>
   );

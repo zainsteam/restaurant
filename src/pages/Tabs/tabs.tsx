@@ -17,36 +17,38 @@ import Mycart from '../Mycart/mycart';
 import AllRestaurant from '../AllRestaurant/allrestaurant';
 import Walkthough from '../Walkthough/walkthough';
 import Home from '../Home/home';
+import {useRef} from 'react';
+
+
 
 
 const Tabs: React.FC = () => {
-  let history = useHistory();
 
+  
+  let history = useHistory();
+  let mySlides = useRef<HTMLIonSlidesElement>(null);
+  let active = mySlides.current?.getActiveIndex();
+  console.log(active);
   return (
       <IonContent >
       <IonReactRouter >
       <IonTabs className="bar">
-      <IonRouterOutlet id="main">
-          <Route path="/:tabs(tab1)" component={Tab1} exact={true} /> 
-          <Route path="/tab2" component={Tab2} exact={true} />
-           <Route path="/tab3" component={Tab3} />
-           <Route path="/:tabs(home)" component={Home} exact={true}/>
-          {/* <Route path="/tabs" component={Tabs} />
-          <Route path="/login" component={Login} exact={true}/>
-          <Route path="/signup" component={SignUp} exact={true}/>
-          <Route path="/forget" component={Forget} exact={true}/>
-          <Route path="/mycart" component={Mycart} exact={true}/>
-          <Route path="/payment" component={Payment} exact={true}/>
-          <Route path="/allrestaurant" component={AllRestaurant} exact={true}/>
-          <Route path="/walkthough" component={Walkthough} exact={true}/> */}
-          <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
-            {/* <Route path="/login" component={Login} exact /> */}
-            <Redirect from="/tabs" to="/home" exact />
+      <IonRouterOutlet id="tabs">
+          {/* <Route path="/tabs:tabs(tab1)" component={Tab1} exact={true} /> 
+          <Route path="/tabs:tabs(tab2)" component={Tab2} exact={true} />
+           <Route path="/:tabs(tab3)" component={Tab3} /> */}
+           <Route path="/tabs/home" component={Home} exact={true}/>
+           <Route path="/mycart" component={Mycart} exact={true}/>
+          <Route path="/:tabs(allrestaurant)" component={AllRestaurant} exact={true}/>
+
+        
+          <Route path="/tabs" render={() => <Redirect to="/tabs/home" />} exact={true} />
+            <Redirect from="/tabs" to="/tabs/home" exact />
           </IonRouterOutlet>
         
           {/* <IonItem > */}
-        <IonTabBar  className="toolBar" color="tertiary" slot="bottom">
-          <IonTabButton  tab="Home" href="/home">
+        <IonTabBar selectedTab="true" className="toolBar" color="tertiary" slot="bottom">
+          <IonTabButton  tab="Home" href="/tabs/home">
             <IonIcon icon={homeOutline} color="light" />
             {/* <IonLabel>Sign up</IonLabel> */}
           </IonTabButton>
@@ -60,11 +62,11 @@ const Tabs: React.FC = () => {
       {/* </IonItem>  */}
             {/* <IonLabel>Home</IonLabel> */}
           {/* </IonTabButton> */}
-          <IonTabButton className="tabItem2" tab="Walkthough" href="/allrestaurant">
+          <IonTabButton className="tabItem2" tab="Walkthough" href="/tab2">
             <IonIcon icon={notificationsOutline} color="light" />
             {/* <IonLabel>Tab 3</IonLabel> */}
           </IonTabButton>
-          <IonTabButton tab="login" href="/mycart">
+          <IonTabButton tab="login" href="/mycart" target="_blank">
             <IonIcon icon={bagHandleOutline} color="light" />
             {/* <IonLabel>Login</IonLabel> */}
           </IonTabButton>

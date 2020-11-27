@@ -26,14 +26,15 @@
     font-size: 32px;
 }
 .tabItem{
-    margin-right: 15%;
+    padding-right: 15%;
 }
 .tabItem2{
-    margin-left: 15%;
+    padding-left: 15%;
 }
 
 .bar{
-    --ion-tabbar-color:black;
+    /* --ion-tabbar-color:black; */
+    
     /* background-color: transparent; */
 }
 
