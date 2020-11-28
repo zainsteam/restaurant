@@ -284,7 +284,7 @@ const Mycart: React.FC = () => {
         </div>
 
         <div className="footer" color="secondary">
-          <IonButton className="placeOrder" onClick={e => {
+          <IonButton className="placeOrder2"  onClick={e => {
               e.preventDefault();
               history.push('/payment');
             }}>

@@ -25,7 +25,7 @@
     margin: 0% 0% 0% 0% ;
     max-width: 100% !important;
 }
-.button2{
+.buttons{
     width: 120px;
     --border-radius: 100px;
     --ion-color-primary: #57300C;

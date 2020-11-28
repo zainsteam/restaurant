@@ -3,6 +3,7 @@ import { IonCardContent,  IonMenuButton, IonCardHeader, IonCardSubtitle, IonCard
 import './allrestaurant.css';
 import { star, eye, search, menu, bagHandleOutline, bagOutline, cardOutline, locationOutline, timeOutline, bicycle, logoFacebook, logoGoogle, logoTwitter, chevronBack } from 'ionicons/icons';
 import { Redirect, Route, useHistory } from 'react-router-dom';
+import Tabs from '../../components/tabs';
 
 const slideOpts = {
   initialSlide: 0,
@@ -474,6 +475,7 @@ const AllRestaurant: React.FC = () => {
             </div>
           </IonCardContent>
         </IonCard>
+        <Tabs/>
       </IonContent>
     </IonPage>
   );

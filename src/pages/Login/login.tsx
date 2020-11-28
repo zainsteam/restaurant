@@ -36,9 +36,9 @@ const Login: React.FC = () => {
             <IonLabel style={{ maxWidth: "100%" }} className="forgetP" ><Link to="/forget">Forget Password</Link></IonLabel>
             
             <div className="buttonC" style={{ textAlign: "center" }} >
-            <IonButton className="button" size="default" onClick={e => {
+            <IonButton className="buttonl" size="default" onClick={e => {
               e.preventDefault();
-              history.push('/tabs');
+              history.push('/home');
               // <Tabs/>
             }}>Login</IonButton>
             {/* <Link to="/tabs">User 1</Link> */}

@@ -1,0 +1,28 @@
+.container {
+  text-align: center;
+  position: sticky;
+  left: 0;
+  right: 0;
+bottom:0;
+z-index: 99;
+/* transform: translateY(-50%); */
+}
+.tabs{
+  background-color:#df7b30  ;
+  padding:15px;
+  border-radius: 30px;
+    margin-bottom: 10px;
+}
+.tabGrid{
+  padding:15px 20px;
+}
+.tabItem{
+  padding-right: 10%;
+}
+.tabItem2{
+  padding-left: 10%;
+}
+.centerBtn{
+  width: 65px;
+    height: 65px;
+}

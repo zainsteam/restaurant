@@ -44,7 +44,7 @@ const Forget: React.FC = () => {
             </IonItem>
             {/* <IonLabel className="forgetP">Forget Password</IonLabel> */}
             <div className="buttonC2" >
-              <IonButton className="button" size="default" onClick={e => {
+              <IonButton className="buttonf" size="default" onClick={e => {
               e.preventDefault();
               history.push('/login');
             }}>Confirm Password</IonButton>

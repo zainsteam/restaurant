@@ -8,17 +8,18 @@
 }
 .resCard{
     display: flex;
-    height: 150px;
+    /* height: 150px; */
     border-radius: 20px;
-    margin-bottom: 30px;
-}
-.resDetails{
-    display: flex;
-    margin-top:5px;
+    margin-bottom: 20px;
+    box-shadow: none;
 }
 .textArea{
     width: 100%;
     background-color: #f7f7f7 !important;
+}
+.resDetails{
+    display: flex;
+    margin-top:5px;
 }
 .resRating{
     /* align-self: center; */

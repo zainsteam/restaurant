@@ -39,22 +39,22 @@ const appPages: AppPage[] = [
   },
   {
     title: 'Cart',
-    url: '/payment'
+    url: '/mycart'
   
   },
   {
     title: 'About Us',
-    url: '/walkthough'
+    url: '/'
 
   },
   {
     title: 'Contact Us',
-    url: '/page/Spam'
+    url: '/'
   }
   ,
   {
     title: 'Logout',
-    url: '/page/Spam'
+    url: '/login'
 
   }
 ];
@@ -65,17 +65,18 @@ const Menu: React.FC = () => {
   const location = useLocation();
 
   return (
-    <IonMenu contentId="main" type="overlay">
+    <IonMenu  contentId="main" type="overlay">
       <IonContent>
-        <IonList id="inbox-list">
-          <IonListHeader>Inbox</IonListHeader>
-          <IonNote>hi@ionicframework.com</IonNote>
+        <IonList className="menu1" id="inbox-list" >
+        <img className="profile" src="./assets/img/profile.jpg"  />
+          <IonListHeader style={{color:"white"}}>John Doe</IonListHeader>
+          <IonNote style={{color:"white",marginTop:10}}>San Francisco, CA</IonNote>
           {appPages.map((appPage, index) => {
             return (
               <IonMenuToggle key={index} autoHide={false}>
                 <IonItem className={location.pathname === appPage.url ? 'selected' : ''} routerLink={appPage.url} routerDirection="none" lines="none" detail={false}>
                   
-                  <IonLabel>{appPage.title}</IonLabel>
+                  <IonLabel color="light">{appPage.title}</IonLabel>
                 </IonItem>
               </IonMenuToggle>
             );
