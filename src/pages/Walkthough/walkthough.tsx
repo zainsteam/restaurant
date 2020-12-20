@@ -23,11 +23,11 @@ const Walkthough: React.FC = () => {
     <IonPage>
 
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
+        {/* <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">signup page</IonTitle>
           </IonToolbar>
-        </IonHeader>
+        </IonHeader> */}
 
         <IonSlides ref={mySlides}
         className="walkthough" pager={true} options={slideOpts}>

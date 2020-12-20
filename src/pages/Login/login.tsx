@@ -14,11 +14,11 @@ const Login: React.FC = () => {
     <IonPage>
 
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
+        {/* <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Login page</IonTitle>
           </IonToolbar>
-        </IonHeader>
+        </IonHeader> */}
         <IonItem color="tertiary" className="topHeading"  >
           <IonLabel color="light" class="paddingV">Welcome <br />back!</IonLabel>
         </IonItem>

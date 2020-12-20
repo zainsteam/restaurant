@@ -22,11 +22,11 @@ const Home: React.FC = () => {
   let history = useHistory();
   return (
     <IonPage>
-        <IonHeader collapse="condense">
+        {/* <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Home page</IonTitle>
           </IonToolbar>
-        </IonHeader>
+        </IonHeader> */}
         <IonItem color="tertiary" className="topHeading3" >
           <IonGrid className="menuBar">
             <IonRow  >

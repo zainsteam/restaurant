@@ -10,11 +10,11 @@ const SignUp: React.FC = () => {
   return (
     <IonPage>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
+        {/* <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">signup page</IonTitle>
           </IonToolbar>
-        </IonHeader>
+        </IonHeader> */}
         <IonItem color="tertiary" className="topHeading2"  >
           <IonLabel color="secondary" class="paddingV2" onClick={e => {
               e.preventDefault();

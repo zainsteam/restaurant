@@ -11,11 +11,11 @@ const Mycart: React.FC = () => {
   return (
     <IonPage>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
+        {/* <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">signup page</IonTitle>
           </IonToolbar>
-        </IonHeader>
+        </IonHeader> */}
         <IonItem lines="none" className="pageHeader" >
           <IonIcon color="dark" icon={arrowBack} onClick={e => {
             e.preventDefault();

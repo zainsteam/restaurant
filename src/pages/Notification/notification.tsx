@@ -12,11 +12,11 @@ const Notification: React.FC = () => {
   return (
     <IonPage>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
+        {/* <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">signup page</IonTitle>
           </IonToolbar>
-        </IonHeader>
+        </IonHeader> */}
         <IonItem lines="none" className="headingn" style={{}}  >
             {/* <IonIcon color="dark" icon={arrowBack} onClick={e => {
             e.preventDefault();

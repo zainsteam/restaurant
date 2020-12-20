@@ -22,11 +22,7 @@ const AllRestaurant: React.FC = () => {
   let history = useHistory();
   return (
     <IonPage>
-      <IonHeader collapse="condense">
-        <IonToolbar>
-          <IonTitle size="large">signup page</IonTitle>
-        </IonToolbar>
-      </IonHeader>
+      
       <IonItem color="tertiary" className="topHeading3" >
         <IonGrid className="menuBar">
           <IonRow  >
